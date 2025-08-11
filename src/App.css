@@ -1,0 +1,174 @@
+.App {
+    width: 100%;
+    text-align: center;
+    color: lightgray;
+    max-height: 100%;
+  }
+  
+  @keyframes wave {
+    0% {
+      text-shadow: 0 0 0 #F29494;
+    }
+    50% {
+      text-shadow: 0 4px 0 #F29494, 0 -4px 0 #61dafb;
+    }
+    100% {
+      text-shadow: 0 0 0 #F29494;
+    }
+  }
+  
+  .mainName {
+    color: #F29494;
+  }
+  
+  .PulseAnimation{
+    animation: wave 1s infinite;
+  }
+  
+  .App-Body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .FlexColumn{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .appNavBar{
+    padding: 0 10%;
+    color: #F29494;
+    box-shadow: 0 0 0.6px 0 whitesmoke;
+    font-weight: 600;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    height: 88px;
+  }
+  
+  @media (max-width: 600px) {
+    .appNavBar{
+      padding: 2% 2%;
+    }
+  
+    .content{
+      padding: 2% 2%;
+    }
+  }
+  
+  @media (min-width: 601px) {
+    .appNavBar{
+      padding: .5% 10% 0 10%;
+    }
+  
+    .content{
+      padding: 2% 10%;
+    }
+  }
+  
+  .appNavLogo{
+    cursor: pointer;
+    height: 100%;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .navlinks {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px
+  }
+  
+  .navlinks a {
+    color: lightgray;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    height: 100%;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .navlinks a:hover {
+    border-bottom: 3px solid #F29494;
+  }
+  
+  .defaultButton {
+    color: #FFF;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    min-height: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #F29494;
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .defaultButton:hover {
+    color: #F29494;
+    background-color: #FFF;
+    border: 1px solid #F29494;
+  }
+  
+  .defaultInput{
+    min-width: 200px;
+    min-height: 35px;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-size: 20px;
+  }
+  
+  .loginButton{
+    color: #FFF;
+    background-color: #F29494;
+    font-weight: 600 !important;
+    min-height: 45px;
+    font-size: 16px !important;
+  }
+  
+  .loginButton:hover{
+    background-color: #FFCCCE;
+  }
+    
+  .btn {
+    position: relative;
+    display: inline-block;
+    padding: 5px 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    border-radius: 6px;
+    appearance: none;
+  }
